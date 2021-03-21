@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    margin: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.125rem;
+	background-color: #eee;
+}
+	
+/* ===============
+	Typography
+=============== */
+
+
+/* ===============
+	Layout
+=============== */
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* ======== Header ========*/
+
+header {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #eee;
+}
+    
+.logo {
+    display: flex;
+}
+   
+.logo img {
+    width: 100%;
+}
+
+nav {
+
+    display: flex;
+    flex-grow: 1;
+    min-height: 80px;
+    align-items: center;
+}
+  
+nav ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+  
+nav li {
+    display: block;
+    margin-bottom: 20px;
+}
+  
+nav a {
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+}
+  
+@media only screen and (min-width: 600px) {
+    #header {
+        flex-direction: row;
+        left: 5%;
+        right: 5%;
+    }
+
+    #nav-bar ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #nav-bar li {
+        display: inline;
+        margin-right: 50px;
+    }
+
+    #nav-bar li:last-child {
+        margin-right: 0;
+    }
+}
+
+/* ======== Form ========*/
+
+.form-outer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+}
+
+@media only screen and (min-width: 600px) {
+    .form-outer {
+        margin-top: 150px;
+    }
+}
+
+.form-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+    width: 100%;
+}
+
+.form-inner input {
+    display: block;
+}
+
+/* email input */
+.form-inner input:first-child {
+    margin-bottom: 20px;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 5px;
+    width: 100%;
+}
+
+/* email submit button (enquiries) */
+.form-inner input:last-child {
+    margin-bottom: 20px;
+    background-color: #f1c40f;
+    padding: 4px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* ======== Get Involved ========*/
+
+#get-involved {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#get-involved .card {
+    display: flex;
+    align-items: center;
+}
+
+#get-involved .content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media only screen and (min-width: 550px) {
+    #get-involved .content {
+        text-align: left;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* ======== Adoption Video ========*/
+
+.iframe-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.iframe-container > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+/* ======== Featured Cats ========*/
+
+#featured-cats {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#featured-cats .card {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    max-width: 340px;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#featured-cats .card .cat-img {
+    margin-top: 25px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+#featured-cats .card button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 800px) {
+    #featured-cats {
+        flex-direction: row;
+        align-self: center;
+    }
+
+    #featured-cats .card:not(last-child) {
+        margin-right: 15px;
+    }
+}
+
+/* ======== Footer ========*/
+
+footer {
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+footer > ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer > ul li {
+    display: inline;
+}
+
+footer > ul li:not(last-child) {
+    margin-right: 10px;
+}
+
+footer > ul li a {
+    color: #000;
+    text-decoration: none;
+}
